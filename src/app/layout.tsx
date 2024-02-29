@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { GeistSans as font } from "geist/font/sans";
 import { cx } from "@/lib/utils";
 
+import { Navbar } from "@/components/navbar";
 
 import "@/styles/globals.css";
 
@@ -21,8 +22,9 @@ export default function RootLayout({
         'text-black bg-white dark:text-white dark:bg-[#111010]',
       )}
     >
-      <body className={cx(font.className, "max-w-2xl flex flex-col")}>
-        <main>{children}</main>
+      <body className={cx(font.className, "max-w-2xl flex flex-col mx-auto my-16")}>
+        <Navbar />
+        <main className="mt-12">{children}</main>
       </body>
     </html>
   );
