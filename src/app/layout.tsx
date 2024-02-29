@@ -22,9 +22,9 @@ export default function RootLayout({
         'text-black bg-white dark:text-white dark:bg-[#111010]',
       )}
     >
-      <body className={cx(font.className, "max-w-2xl flex flex-col mx-auto my-16")}>
+      <body className={cx(font.className, "max-w-[750px] flex flex-col mx-auto my-16")}>
         <Navbar />
-        <main className="mt-12">{children}</main>
+        <main className="mt-12 mx-8">{children}</main>
       </body>
     </html>
   );

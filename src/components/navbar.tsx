@@ -7,7 +7,7 @@ const links = {
 }
 
 export function Navbar() {
-  return <nav className="flex items-start space-x-4">
+  return <nav className="flex items-start space-x-4 mx-8">
     {Object.entries(links).map(([name, url]) => {
       return <Link href={url} key={name}>{
         <p className="text-sm relative inline-block hover:text-neutral-300 group">
