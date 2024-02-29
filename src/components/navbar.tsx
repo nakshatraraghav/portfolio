@@ -7,8 +7,8 @@ const links = {
 }
 
 export function Navbar() {
-  return <div className="flex items-center justify-between">
-    <nav className="flex items-start space-x-4 mx-8">
+  return <div className="flex items-center justify-between mx-8">
+    <nav className="flex items-start space-x-4">
       {Object.entries(links).map(([name, url]) => {
         return <Link href={url} key={name}>{
           <p className="text-sm relative text-neutral-100 inline-block hover:text-neutral-300 group">
