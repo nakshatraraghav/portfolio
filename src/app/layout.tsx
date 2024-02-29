@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-
 import { GeistSans as font } from "geist/font/sans";
+import { cx } from "@/lib/utils";
+
 
 import "@/styles/globals.css";
 
@@ -15,8 +16,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={font.className}>{children}</body>
+    <html lang="en"
+      className={cx(
+        'text-black bg-white dark:text-white dark:bg-[#111010]',
+      )}
+    >
+      <body className={cx(font.className, "max-w-2xl flex flex-col")}>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
