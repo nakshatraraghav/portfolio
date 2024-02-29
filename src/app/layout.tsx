@@ -3,6 +3,7 @@ import { GeistSans as font } from "geist/font/sans";
 import { cx } from "@/lib/utils";
 
 import { Navbar } from "@/components/navbar";
+import Particles from "@/components/particles";
 
 import "@/styles/globals.css";
 
@@ -23,6 +24,10 @@ export default function RootLayout({
       )}
     >
       <body className={cx(font.className, "max-w-[750px] flex flex-col mx-auto my-16")}>
+        <Particles
+          className="absolute inset-0 -z-10 animate-fade-in"
+          quantity={100}
+        />
         <Navbar />
         <main className="mt-12 mx-8">{children}</main>
       </body>
