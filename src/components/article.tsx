@@ -7,7 +7,7 @@ type Props = {
 
 export const Article: React.FC<Props> = ({ doc }) => {
   return (
-    <Link href={`/projects/${doc.slug}`}>
+    <Link href={`/projects${doc.slug}`}>
       <article className="p-4 md:p-8">
         <h2 className="z-20 text-xl font-medium duration-1000 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
           {doc.title}
