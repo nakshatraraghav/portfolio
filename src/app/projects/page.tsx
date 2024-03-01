@@ -17,7 +17,7 @@ export default function ProjectsPage() {
         <p>Some of the projects that i have built.</p>
       </div>
       <div className="w-full h-px bg-zinc-800" />
-      <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-2">
         {
           allDocs.map((doc) => {
             return <Card key={doc.slug}>
