@@ -4,7 +4,6 @@ const links = {
   "home": "/",
   "projects": "/projects",
   "uses": "/uses",
-  "contact": "/contact",
 }
 
 export function Navbar() {
