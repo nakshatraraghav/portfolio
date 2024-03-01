@@ -3,7 +3,8 @@ import Link from "next/link"
 const links = {
   "home": "/",
   "projects": "/projects",
-  "contact": "/contact"
+  "uses": "/uses",
+  "contact": "/contact",
 }
 
 export function Navbar() {

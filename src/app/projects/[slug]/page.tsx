@@ -4,7 +4,9 @@ import { notFound } from "next/navigation";
 
 function getMarkdown(slug: string) {
 
-  const doc = allDocs.find((doc) => doc.slug == `/${slug}`);
+  console.log(allDocs);
+
+  const doc = allDocs.find((doc) => doc.slug == `/projects/${slug}`);
 
   if (!doc) {
     notFound();
