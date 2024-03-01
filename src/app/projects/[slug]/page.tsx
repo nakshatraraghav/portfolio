@@ -1,10 +1,10 @@
-import { allDocs } from "contentlayer/generated";
-import { Mdx } from "@/components/mdx/mdx-components";
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-function getMarkdown(slug: string) {
+import { allDocs } from "contentlayer/generated";
+import { Mdx } from "@/components/mdx/mdx-components";
 
-  console.log(allDocs);
+function getMarkdown(slug: string) {
 
   const doc = allDocs.find((doc) => doc.slug == `/projects/${slug}`);
 
