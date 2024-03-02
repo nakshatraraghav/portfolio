@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={cx(font.className, "max-w-[800px] flex flex-col mx-auto my-16")}>
         <Particles
           className="absolute inset-0 -z-10 animate-fade-in"
-          quantity={100}
+          quantity={250}
         />
         <Navbar />
         <main className="mt-12 mx-8">{children}</main>
