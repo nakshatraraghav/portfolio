@@ -23,7 +23,7 @@ export default function RootLayout({
         'text-black bg-white dark:text-white dark:bg-[#111010]',
       )}
     >
-      <body className={cx(font.className, "max-w-[950px] flex flex-col mx-auto my-16")}>
+      <body className={cx(font.className, "max-w-[800px] flex flex-col mx-auto my-16")}>
         <Particles
           className="absolute inset-0 -z-10 animate-fade-in"
           quantity={100}
